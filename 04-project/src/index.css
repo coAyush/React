@@ -1,0 +1,93 @@
+.Container{
+  padding: 18px;
+  height: 350px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: none;
+  background-color: #fafafa;;
+}
+.Header{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 12px;
+}
+.logo{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border-width: 8px;
+  border-color: whitesmoke;
+}
+
+.apply:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.center{
+  margin-bottom: 16px;
+}
+.com{
+  font-weight: bold;
+  font-size: 22px;
+}
+.date{
+  font-weight: lighter;
+  font-size: 18px;
+  color: rgb(211, 205, 205);
+}
+.desc{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.exp{
+  font-weight: bolder;
+  font-size: large;
+}
+.req{
+  display: flex;
+  font-weight: 600;
+  gap: 6px;
+}
+.req button{
+  padding: 2px 6px;
+  font-size: 12px;
+}
+.Footer{
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+}
+.jobdesc{
+  margin-top: 2px;
+}
+.apply{
+  width: 95px;
+  height: 30px;
+  border-radius: 12px;
+  border: none;
+  margin-top: 5px;
+  background-color: black;
+}
+
+.Parent{
+  min-height: 100vh;
+  padding: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 60px;
+  justify-content: center;
+}
+.apply {
+  color: white;
+  font-weight: bold;
+}
