@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  border: none;
+  border: 2px solid transparent;
   background-color: #fafafa;;
 }
 .Header{
@@ -90,4 +90,33 @@
 .apply {
   color: white;
   font-weight: bold;
+}
+.apply:active{
+  background-color: rgb(9, 129, 220);
+}
+
+.Container:hover{
+  transform:scale(1.2);
+  border-color:rgb(95, 204, 234);
+  transition:transform 0.7s ease, border-color 0.6s ease;
+}
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(83, 146, 24, 0.45);
 }
