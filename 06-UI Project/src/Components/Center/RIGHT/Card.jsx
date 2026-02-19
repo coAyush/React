@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({imageUrl,label,number,description}) => {
   return (
-    <div className='relative w-[300px] h-[570px] rounded-[3rem] rounded-t-[3rem] overflow-hidden'>
+    <div className='relative w-[300px] h-[570px] rounded-[3rem] rounded-t-[3rem] overflow-hidden transition-all duration-500 ease-in-out hover:scale-125 '>
       <img src={imageUrl} alt={label} className='absolute inset-0 object-cover opacity-80 w-full h-full'></img>
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
       <div className='mt-4 ml-6 relative z-10 w-10 h-10 rounded-full bg-white flex justify-center items-center font-extrabold '>{number}</div>
