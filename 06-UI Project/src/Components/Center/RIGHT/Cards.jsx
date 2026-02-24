@@ -3,7 +3,7 @@ import Card from './Card'
 const Cards = () => {
   return (
     <>
-      <div className='w-full min-h-[160px] ml-9 mt-12 grid grid-cols-3 gap-1.5'>
+      <div className='w-full min-h-[160px] ml-9 mt-12 flex flex-nowrap overflow-x-auto overflow-y-hidden gap-4 pb-4 custom-scroll'>
         <Card imageUrl='https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         label="satisfied"
         number="1"
@@ -18,6 +18,11 @@ const Cards = () => {
         label="moderate"
         number="3"
         description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa sequi minus expedita necessitatibus, laboriosam"
+        />
+        <Card imageUrl="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+         label="good"
+         number="4"
+         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus facilis voluptatem nemo dolores laboriosam beatae dolore sit assumenda velit eius, deserunt illum, voluptas tenetur veniam magnam necessitatibus vel quam?"
         />
         
       </div>
