@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-    <div className='grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] min-h-screen bg-gradient-to-b from-black to-zinc-900 h-screen w-screen '>
+    <div className='grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] min-h-screen w-full bg-gradient-to-b from-black to-zinc-900 '>
     <div className='flex flex-col justify-start items-center pt-4'>
       <Form addNote={addNotes}/>
       </div>
