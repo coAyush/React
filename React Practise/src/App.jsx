@@ -1,14 +1,11 @@
 import React from 'react'
+import Counter from './Counter'
 
 const App = () => {
   return (
     <>
-    <div> 
-      <h1>hi</h1>
-    </div>
-    <div>
-      "yoyo"
-    </div>
+    <Counter/>
+    {localStorage.clear()}
     </>
   )
 }
