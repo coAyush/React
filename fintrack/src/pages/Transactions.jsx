@@ -1,6 +1,9 @@
+import {useTransactions} from '../context/TransactionContext'
+import TransactionItem from '../component/transaction/TransactionItem'
 const Transactions = () => {
 
   const { transactions, deleteTransaction } = useTransactions()
+  console.log(transactions)
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-8">
