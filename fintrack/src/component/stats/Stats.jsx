@@ -16,7 +16,10 @@ const Stats = ({totalIncome,totalBalance,totalExpense,transactionsNo}) => {
         <div className='grid grid-cols-2 grid-rows-2 gap-2'>
             <div className='bg-indigo-950 flex flex-col gap-1 rounded-2xl p-2'>
                 <p className='text-indigo-200 font-medium'>Savings</p>
-                <p className='text-green-500 font-bold'>{(totalBalance/totalIncome)*100}</p>
+                <p className='text-green-500 font-bold'>{(() => {
+                    if (totalIncome === 0) return 0;
+                    return ((totalBalance / totalIncome) * 100).toFixed(2);
+                })()}</p>
             </div>
            <div className='bg-indigo-950 flex flex-col gap-1 rounded-2xl p-2'>
                 <p className='text-indigo-200 font-medium'>Transactions</p>
