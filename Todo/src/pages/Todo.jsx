@@ -8,11 +8,11 @@ const Todo = () => {
   const[tasks,setTasks]=useState([]);
   return (
     <>
-    <div className='flex flex-col bg-blue-950 min-h-screen gap-2.5'>
+    <div className='flex flex-col bg-blue-950 min-h-screen gap-5 items-center px-4 py-6'>
       <Header/>
       <Clock/>
       <AddTask setTasks={setTasks}/>
-      <TaskList tasks={tasks}/>
+      <TaskList tasks={tasks} setTasks={setTasks}/>
     </div>
     </>
   )
