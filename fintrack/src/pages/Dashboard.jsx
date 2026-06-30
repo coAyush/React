@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 import { useTransactions } from '../context/TransactionContext'
 const Dashboard = () => {
   
-  const {transactions, totalIncome,totalExpense,totalBalance, addTransaction,deleteTransaction}=useTransactions()
+ const {transactions, totalIncome,totalExpense,totalBalance, addTransaction,deleteTransaction}=useTransactions()
   const [isFormOpen, setIsFormOpen] = useState(false)
   const [budgets, setBudgets] = useState([
     { id: 1, icon: '🍔', name: 'Food', spent: 3200, total: 5000 },
