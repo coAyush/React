@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Clock from '../components/Clock'
 import AddTask from '../components/AddTask';
 import TaskList from '../components/TaskList';
+import Clear from '../components/Clear';
 
 const Todo = () => {
   const[tasks,setTasks]=useState([]);
@@ -13,6 +14,7 @@ const Todo = () => {
       <Clock/>
       <AddTask setTasks={setTasks}/>
       <TaskList tasks={tasks} setTasks={setTasks}/>
+      <Clear  setTasks={setTasks}/>
     </div>
     </>
   )
