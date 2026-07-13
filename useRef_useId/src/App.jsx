@@ -2,26 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
-import './App.css'
-<<<<<<< HEAD
 import './index.css'
-import Pokemon from './pages/Pokemon'
+
+import Login from './pages/Login'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Pokemon />
-=======
-import Pokemon from './pages/Pokemon'
-
-function App() {
- 
-  return (
-    <>
-      <Pokemon />
->>>>>>> fad49e8853f402846b24afe05228ae6f5adb7ce2
+     <Login />
     </>
   )
 }

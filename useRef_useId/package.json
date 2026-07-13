@@ -1,5 +1,5 @@
 {
-  "name": "pokemon",
+  "name": "useref-useid",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,10 +13,6 @@
     "@tailwindcss/vite": "^4.3.2",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-<<<<<<< HEAD
-    "react-icons": "^5.7.0",
-=======
->>>>>>> fad49e8853f402846b24afe05228ae6f5adb7ce2
     "tailwindcss": "^4.3.2"
   },
   "devDependencies": {
