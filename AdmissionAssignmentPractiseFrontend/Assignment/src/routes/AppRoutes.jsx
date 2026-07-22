@@ -6,12 +6,14 @@ import Management from '../pages/Management';
 import Recheck from '../pages/Recheck';
 import Department from '../pages/Department';
 import Admission from '../pages/Admission';
+import { dashboardLoader } from './loaders/dashboardLoader';
 const AppRoutes = () => {
   const router = createBrowserRouter([{
     path: "/",
     element: <AppLayout />,
     children: [{
       index: true,
+      loader : dashboardLoader,
       element: <Dashboard />
     },
     {
