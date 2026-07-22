@@ -1,15 +1,17 @@
-const StatsCard = ({ title, count, icon: Icon, accent }) => {
+import React from "react";
+
+const StatsCard = ({ title, count, icon, bgColor }) => {
   return (
-    <div className="bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition p-6 flex items-center gap-4">
-      <div className={`flex items-center justify-center w-12 h-12 rounded-lg ${accent}`}>
-        <Icon className="text-white w-6 h-6" />
+    <div className="flex-1 min-w-[220px] h-32 bg-white shadow-md rounded-2xl p-5 flex items-center gap-4 hover:shadow-xl hover:scale-105 cursor-pointer transition-all duration-200">
+      <div className={`${bgColor} text-white text-2xl w-14 h-14 rounded-xl flex items-center justify-center`}>
+        {icon}
       </div>
       <div>
         <p className="text-slate-500 text-sm font-medium">{title}</p>
-        <p className="text-slate-800 text-2xl font-bold">{count}</p>
+        <p className="text-3xl font-bold text-slate-800">{count}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default StatsCard
+export default StatsCard;
