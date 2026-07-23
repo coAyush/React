@@ -37,8 +37,8 @@ const AdmissionBarChart = ({ data }) => {
       <ResponsiveContainer width="100%" height="85%">
         <BarChart data={data} margin={{ top: 10, right: 20, left: 0, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
-          <XAxis dataKey="year" axisLine={false} tickLine={false} />
-          <YAxis axisLine={false} tickLine={false} allowDecimals={false} />
+          <XAxis dataKey="year" axisLine={true} tickLine={false} />
+          <YAxis axisLine={true} tickLine={false} allowDecimals={false} />
           <Tooltip content={<CustomTooltip />} />
           <Bar
             dataKey="totalStudents"
