@@ -18,7 +18,7 @@ const AppRoutes = () => {
     },
     {
       path: "department",
-      elementc: <Department />
+      element: <Department />
     },
     {
       path: "management",
