@@ -14,7 +14,7 @@ const Select = ({ genders, value, onChange,name,placeholder }) => {
         transition-all duration-200 bg-white cursor-pointer">
             <option value="" disabled className='text-black text-xl'>{placeholder}</option>
                 {
-                    genders.map((gender, index) => (<option value={gender}> {gender}</option>))
+                    genders.map((gender, index) => (<option value={gender} key={gender}> {gender}</option>))
                 }
             </select>
         </div>

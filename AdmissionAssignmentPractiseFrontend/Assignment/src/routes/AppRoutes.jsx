@@ -7,6 +7,7 @@ import Recheck from '../pages/Recheck';
 import Department from '../pages/Department';
 import Admission from '../pages/Admission';
 import { dashboardLoader } from './loaders/dashboardLoader';
+import { admissionPageLoader } from './loaders/admissionPageLoader';
 const AppRoutes = () => {
   const router = createBrowserRouter([{
     path: "/",
@@ -30,7 +31,8 @@ const AppRoutes = () => {
     },
     {
       path : "admission",
-      element : <Admission />
+      element : <Admission />,
+      loader : admissionPageLoader
     }
     ]
   }])
