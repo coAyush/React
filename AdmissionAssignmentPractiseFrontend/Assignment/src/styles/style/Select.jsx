@@ -7,7 +7,7 @@ const Select = ({ genders, value, onChange,name,placeholder }) => {
       transition-all duration-200'>
             <select 
             name={name}
-            value={value}
+            value={value || ""}
             onChange={onChange}
             className="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-700
         outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100
